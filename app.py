@@ -10,6 +10,10 @@ setup_metrics(app)
 def test():
     return 'rest'
 
+@app.route('/')
+def home():
+    return 'server is running'
+
 @app.route('/test1/')
 def test1():
     1/0
